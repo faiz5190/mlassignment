@@ -18,7 +18,7 @@ from sklearn.metrics import classification_report
 
 
 
-st.title('Machine Learning - Streamlit 1st Project')
+st.title('Machine Learning - 1st Assignment (Titanic)')
 
 st.sidebar.write("""
 This is a web app demo using python libraries such as Streamlit, Sklearn etc
