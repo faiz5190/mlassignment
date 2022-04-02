@@ -58,7 +58,7 @@ def add_dataset_ui(choice_name):
     if choice_name == 'Default':
        dataset_name = st.sidebar.selectbox(
             'Select Dataset',
-            ('Iris', 'Breast Cancer', 'Wine')
+            ('Titanic', 'Breast Cancer', 'Wine')
         )
        X, y = get_default_dataset (dataset_name)
        X_names = X
