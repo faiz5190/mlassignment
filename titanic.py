@@ -15,7 +15,7 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.ensemble import RandomForestClassifier
 
 from sklearn.metrics import classification_report
-titanic_data = pd.read_csv('train.csv')
+
 
 
 
@@ -42,7 +42,7 @@ st.write(f"## You Have Selected <font color='Aquamarine'>{choice}</font> Dataset
 def get_default_dataset(name):
     data = None
     if name == 'Titanic':
-        data = datasets.load_titanic_data()
+        data = datasets.load_iris()
     elif name == 'Wine':
         data = datasets.load_wine()
     else:
