@@ -40,8 +40,8 @@ st.write(f"## You Have Selected <font color='Aquamarine'>{choice}</font> Dataset
 
 def get_default_dataset(name):
     data = None
-    if name == 'Titanic':
-        data = datasets.load_train()
+    if name == 'Iris':
+        data = datasets.load_iris()
     elif name == 'Wine':
         data = datasets.load_wine()
     else:
@@ -58,7 +58,7 @@ def add_dataset_ui(choice_name):
     if choice_name == 'Default':
        dataset_name = st.sidebar.selectbox(
             'Select Dataset',
-            ('Titanic', 'Breast Cancer', 'Wine')
+            ('Iris', 'Breast Cancer', 'Wine')
         )
        X, y = get_default_dataset (dataset_name)
        X_names = X
