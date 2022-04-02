@@ -15,6 +15,7 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.ensemble import RandomForestClassifier
 
 from sklearn.metrics import classification_report
+titanic_data = pd.read_csv('train.csv')
 
 
 
@@ -40,8 +41,8 @@ st.write(f"## You Have Selected <font color='Aquamarine'>{choice}</font> Dataset
 
 def get_default_dataset(name):
     data = None
-    if name == 'Iris':
-        data = datasets.load_iris()
+    if name == 'Titanic':
+        data = datasets.load_titanic_data()
     elif name == 'Wine':
         data = datasets.load_wine()
     else:
@@ -58,7 +59,7 @@ def add_dataset_ui(choice_name):
     if choice_name == 'Default':
        dataset_name = st.sidebar.selectbox(
             'Select Dataset',
-            ('Iris', 'Breast Cancer', 'Wine')
+            ('Titanic', 'Breast Cancer', 'Wine')
         )
        X, y = get_default_dataset (dataset_name)
        X_names = X
