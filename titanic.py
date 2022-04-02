@@ -53,8 +53,7 @@ def add_dataset_ui(choice_name):
     y=[]
     X_names = []
     X1 = []
-    if choice_name == 'Default':
-       dataset_name = st.sidebar.selectbox(
+ 
             'Select Dataset',
             ('Titanic')
         )
