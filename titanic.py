@@ -2,7 +2,7 @@ import pandas as pd
 import streamlit as st
 
 
-st.title('CLASSIFICATION')
+st.title('CLASSIFICATION (Titanic')
 
 st.sidebar.write("""
 A classification demo using titanic dataset
