@@ -41,7 +41,7 @@ st.write(f"## You Have Selected <font color='Aquamarine'>{choice}</font> Dataset
 def get_default_dataset(name):
     data = None
     if name == 'Iris':
-        data = datasets.load_iris()
+        data = pd.read_csv('train.csv')
     elif name == 'Wine':
         data = datasets.load_wine()
     else:
